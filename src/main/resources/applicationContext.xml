@@ -11,7 +11,8 @@
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:jdbc.properties"/>
+          <!-- 该参数通过java启动命令指定 -Denv=dev、test、prd -->
+        <property name="location" value="classpath:${env}/jdbc.properties"/>
     </bean>
 
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
