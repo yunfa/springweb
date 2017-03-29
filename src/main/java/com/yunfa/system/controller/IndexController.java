@@ -22,6 +22,9 @@ public class IndexController {
 	@RequestMapping("/")
 	public ModelAndView index() {
 		System.out.println("index....");
+		if("aa" == "aa") {
+			System.out.println("aaaa");
+		}
 		ModelAndView view = new ModelAndView("index");
 		return view;
 	}
