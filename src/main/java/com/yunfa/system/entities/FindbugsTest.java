@@ -1,6 +1,6 @@
 package com.yunfa.system.entities;
 
-public class FindbugsBean {
+public class FindbugsTest {
 
 	private java.util.Date firstdate;
 
